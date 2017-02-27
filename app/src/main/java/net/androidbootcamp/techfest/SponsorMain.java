@@ -6,12 +6,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
-public class Main2Activity extends AppCompatActivity {
+public class SponsorMain extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.activity_sponsor_main);
         ImageButton imgSponsor1 = (ImageButton)findViewById(R.id.imgSponsor1);
         ImageButton imgSponsor2 = (ImageButton)findViewById(R.id.imgSponsor2);
         ImageButton imgSponsor3 = (ImageButton)findViewById(R.id.imgSponsor3);
@@ -21,37 +21,37 @@ public class Main2Activity extends AppCompatActivity {
         imgSponsor1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Main2Activity.this, Sponsor1.class));
+                startActivity(new Intent(SponsorMain.this, Sponsor1.class));
             }
         });
         imgSponsor2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Main2Activity.this, Sponsor2.class));
+                startActivity(new Intent(SponsorMain.this, Sponsor2.class));
             }
         });
         imgSponsor3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Main2Activity.this, Sponsor3.class));
+                startActivity(new Intent(SponsorMain.this, Sponsor3.class));
             }
         });
         imgSponsor4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Main2Activity.this, Sponsor4.class));
+                startActivity(new Intent(SponsorMain.this, Sponsor4.class));
             }
         });
         imgSponsor5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Main2Activity.this, Sponsor5.class));
+                startActivity(new Intent(SponsorMain.this, Sponsor5.class));
             }
         });
         imgSponsor6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Main2Activity.this, Sponsor6.class));
+                startActivity(new Intent(SponsorMain.this, Sponsor6.class));
             }
         });
     }

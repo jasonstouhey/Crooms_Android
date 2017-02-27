@@ -15,7 +15,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Main2Activity" />
+        <activity android:name=".SponsorMain" />
         <activity android:name=".Sponsor1" />
         <activity android:name=".Sponsor2" />
         <activity android:name=".Sponsor3" />
