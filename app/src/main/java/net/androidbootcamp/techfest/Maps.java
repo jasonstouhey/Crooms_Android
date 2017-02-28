@@ -23,9 +23,6 @@ public class Maps extends AppCompatActivity {
 
         pager.setAdapter(new CustomPagerAdapter(getSupportFragmentManager(), this));
 
-        PagerTabStrip pagerTabStrip = (PagerTabStrip) findViewById(R.id.pager_tab_strip);
-        pagerTabStrip.setGravity(Gravity.LEFT);
-
         //SlidingTabLayout slidingTab= (SlidingTabLayout) this.findViewById(R.id.pager_tab_strip);
         //slidingTab.setDistributeEvenly(true);
         //slidingTab.setViewPager(pager);
