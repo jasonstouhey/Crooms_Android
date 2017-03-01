@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+
         ImageButton button3 = (ImageButton)findViewById(R.id.imgButton3);
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -29,7 +30,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
+        ImageButton button4 = (ImageButton)findViewById(R.id.imgButton4);
+        button4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, About.class));
+            }
+        });
 
     }
 

@@ -16,6 +16,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".Maps" />
+        <activity android:name=".About"/>
         <activity android:name=".SponsorMain" />
         <activity android:name=".Sponsor1" />
         <activity android:name=".Sponsor2" />
