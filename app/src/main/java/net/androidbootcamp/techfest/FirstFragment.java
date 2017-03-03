@@ -15,6 +15,7 @@ import android.util.Log;
 import android.view.MotionEvent;
 import android.widget.ImageView;
 
+
 import static android.R.attr.start;
 
 /**
@@ -44,8 +45,8 @@ public class FirstFragment extends Fragment implements View.OnTouchListener{
         View v = inflater.inflate(R.layout.fragment_map, container, false);
 
         ImageView view = (ImageView) v.findViewById(R.id.imgMap1);
-        view.setScaleType(ImageView.ScaleType.FIT_CENTER); // make the image fit to the center.
-        view.setOnTouchListener(this);
+        //view.setScaleType(ImageView.ScaleType.FIT_CENTER); // make the image fit to the center.
+        //view.setOnTouchListener(this);
 
         return v;
     }
