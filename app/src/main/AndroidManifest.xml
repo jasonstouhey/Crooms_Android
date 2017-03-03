@@ -16,12 +16,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".Main2Activity" />
-        <activity android:name=".Sponsor1" />
-        <activity android:name=".Sponsor2" />
-        <activity android:name=".Sponsor3" />
-        <activity android:name=".Sponsor4" />
-        <activity android:name=".Sponsor5" />
-        <activity android:name=".Sponsor6"></activity>
+        <activity android:name=".MainWorkshop"></activity>
     </application>
 
 </manifest>
