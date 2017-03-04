@@ -2,11 +2,10 @@ package net.androidbootcamp.techfest;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
 import android.widget.TextView;
 
 /**
- * Created by 5919000023 on 3/1/2017.
+ * Created by Alex Quach on 3/1/2017.
  */
 
 public class About extends AppCompatActivity {
