@@ -2,11 +2,10 @@ package net.androidbootcamp.techfest;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
 import android.widget.TextView;
 
 /**
- * Created by 5919000023 on 3/1/2017.
+ * Created by Alex Quach on 3/1/2017.
  */
 
 public class About extends AppCompatActivity {
@@ -16,7 +15,7 @@ public class About extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.about);
         final TextView Change = ((TextView)findViewById(R.id.txtView));
-        Change.setText("ABOUT CROOMS AOIT \n\n" +
+        Change.setText("ABOUT CROOMS ACADEMY \n\n" +
                 "\tCrooms Academy of Information Technology began as Crooms High School. It was founded by one of the nation's outstanding pioneers of education for black students, Professor Joseph Nathaniel Crooms. A graduate of Hampton University and Florida A & M University, Crooms was known for his untiring efforts and energies in the promotion of education for black youth in Florida, as well as the development of schools in Sanford, Florida. In 1910, Crooms obtained approval for a new school building. He developed the plans and selected the school site. In 1926, Crooms Academy was constructed as a high school for black students. It was named after Professor Crooms by a community grateful for his dedication and energy in pursuit of educational opportunity for its students. \n\n" +
                 "\tThe mission of Crooms Academy of Information Technology is to provide innovative teaching and learning in a technology-enriched environment and to engage students in an academically challenging curriculum that prepares them for post-secondary education with industry-validated technology skills. \n\n" +
                 "\tCrooms Academy of Information Technology is Seminole County Public Schools only dedicated magnet high school. All students who reside in Seminole County and have successfully completed the 8 th grade may apply for admission. Students must submit the High School Magnet Program Application through SCPS Choices Department and be chosen in the random selection process. \n\n" +
