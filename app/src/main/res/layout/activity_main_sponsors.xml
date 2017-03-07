@@ -27,48 +27,108 @@
 
             <ImageView
                 android:layout_width="match_parent"
-                app:srcCompat="@drawable/mti"
+                app:srcCompat="@drawable/verizon"
                 android:id="@+id/imgSponsor1"
                 android:layout_height="150dp"
                 android:scaleType="fitCenter"
                 android:background="@android:color/transparent"
-                android:layout_gravity="center_horizontal" />
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp" />
 
             <ImageView
                 android:layout_width="match_parent"
-                app:srcCompat="@drawable/lockheedlogo"
+                app:srcCompat="@drawable/kensington"
                 android:id="@+id/imgSponsor2"
                 android:layout_height="150dp"
                 android:scaleType="fitCenter"
                 android:background="@android:color/transparent"
-                android:layout_gravity="center_horizontal" />
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp" />
 
             <ImageView
                 android:layout_width="match_parent"
-                app:srcCompat="@drawable/ncswave"
+                app:srcCompat="@drawable/veritas"
                 android:id="@+id/imgSponsor3"
                 android:layout_height="150dp"
                 android:scaleType="fitCenter"
                 android:background="@android:color/transparent"
-                android:layout_gravity="center_horizontal" />
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginBottom="10dp" >
 
             <ImageView
-                android:layout_width="match_parent"
-                app:srcCompat="@drawable/sample"
+                android:layout_width="150dp"
+                app:srcCompat="@drawable/mti"
                 android:id="@+id/imgSponsor4"
-                android:layout_height="150dp"
+                android:layout_height="75dp"
                 android:scaleType="fitCenter"
                 android:background="@android:color/transparent"
-                android:layout_gravity="center_horizontal" />
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_marginRight="10dp" />
 
             <ImageView
-                android:layout_width="match_parent"
-                app:srcCompat="@drawable/sample"
+                android:layout_width="150dp"
+                app:srcCompat="@drawable/lockheedlogo"
                 android:id="@+id/imgSponsor5"
-                android:layout_height="150dp"
+                android:layout_height="75dp"
                 android:scaleType="fitCenter"
                 android:background="@android:color/transparent"
-                android:layout_gravity="center_horizontal" />
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginBottom="10dp" >
+
+                <ImageView
+                    android:layout_width="150dp"
+                    app:srcCompat="@drawable/ncswave"
+                    android:id="@+id/imgSponsor6"
+                    android:layout_height="75dp"
+                    android:scaleType="fitCenter"
+                    android:background="@android:color/transparent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="10dp" />
+
+                <ImageView
+                    android:layout_width="150dp"
+                    app:srcCompat="@drawable/marines"
+                    android:id="@+id/imgSponsor7"
+                    android:layout_height="75dp"
+                    android:scaleType="fitCenter"
+                    android:background="@android:color/transparent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp" />
+
+            </LinearLayout>
+
+                <ImageView
+                    android:layout_width="150dp"
+                    app:srcCompat="@drawable/aaa"
+                    android:id="@+id/imgSponsor8"
+                    android:layout_height="75dp"
+                    android:scaleType="fitCenter"
+                    android:background="@android:color/transparent"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dp" />
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/listSponsors"
+                android:layout_marginBottom="10dp" />
 
         </LinearLayout>
     </ScrollView>

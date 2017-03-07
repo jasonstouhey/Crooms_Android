@@ -1,6 +1,4 @@
 <resources>
     <string name="app_name">TechFest</string>
-    <string name="txtSponsor">Sponsor Name</string>
-    <string name="txtSponsorDescription">Description about sponsor?</string>
     <string name="txtGradeLevel">Pick your grade level.</string>
 </resources>
