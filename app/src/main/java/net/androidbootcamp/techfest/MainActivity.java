@@ -14,15 +14,18 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        ImageView button1 = (ImageView)findViewById(R.id.imgButton1);
-        ImageView button2 = (ImageView)findViewById(R.id.imgButton2);
-        button1.setOnClickListener(new View.OnClickListener() {
+        ImageView sponsors = (ImageView)findViewById(R.id.imgSponsors);
+        ImageView workshops = (ImageView)findViewById(R.id.imgWorkshops);
+        ImageView maps = (ImageView)findViewById(R.id.imgMaps);
+        ImageView about = (ImageView)findViewById(R.id.imgAbout);
+        ImageView policy = (ImageView)findViewById(R.id.imgPolicy);
+        sponsors.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, MainSponsors.class));
             }
         });
-        button2.setOnClickListener(new View.OnClickListener() {
+        workshops.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, MainWorkshop.class));
