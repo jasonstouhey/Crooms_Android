@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_sponsors"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="net.androidbootcamp.techfest.MainSponsors"
+    android:layout_centerHorizontal="false"
+    android:layout_centerVertical="false">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                app:srcCompat="@drawable/sample"
+                android:id="@+id/imgSponsor1"
+                android:layout_height="150dp"
+                android:scaleType="fitXY"
+                android:background="@android:color/transparent" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                app:srcCompat="@drawable/sample"
+                android:id="@+id/imgSponsor2"
+                android:layout_height="150dp"
+                android:scaleType="fitXY"
+                android:background="@android:color/transparent" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                app:srcCompat="@drawable/sample"
+                android:id="@+id/imgSponsor3"
+                android:layout_height="150dp"
+                android:scaleType="fitXY"
+                android:background="@android:color/transparent" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="175dp"
+                    app:srcCompat="@drawable/sample"
+                    android:id="@+id/imgSponsor4"
+                    android:layout_height="150dp"
+                    android:scaleType="fitXY"
+                    android:background="@android:color/transparent"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="176dp"
+                    app:srcCompat="@drawable/sample"
+                    android:id="@+id/imgSponsor5"
+                    android:layout_height="150dp"
+                    android:scaleType="fitXY"
+                    android:background="@android:color/transparent"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    app:srcCompat="@drawable/sample"
+                    android:id="@+id/imgSponso6"
+                    android:layout_height="150dp"
+                    android:scaleType="fitXY"
+                    android:background="@android:color/transparent"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    app:srcCompat="@drawable/sample"
+                    android:id="@+id/imgSponsor7"
+                    android:layout_height="150dp"
+                    android:scaleType="fitXY"
+                    android:background="@android:color/transparent"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                app:srcCompat="@drawable/sample"
+                android:id="@+id/imgSponsor8"
+                android:layout_height="150dp"
+                android:scaleType="fitXY"
+                android:background="@android:color/transparent"
+                android:layout_marginLeft="90dp"
+                android:layout_marginRight="90dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

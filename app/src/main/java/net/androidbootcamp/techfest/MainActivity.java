@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -12,17 +13,24 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        ImageButton button1 = (ImageButton)findViewById(R.id.imgButton1);
+        ImageView button1 = (ImageView)findViewById(R.id.imgButton1);
+        ImageView button2 = (ImageView)findViewById(R.id.imgButton2);
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, SponsorMain.class));
+                startActivity(new Intent(MainActivity.this, MainSponsors.class));
+            }
+        });
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, MainWorkshop.class));
             }
         });
 
 
 
-        ImageButton button3 = (ImageButton)findViewById(R.id.imgButton3);
+        ImageView button3 = (ImageView)findViewById(R.id.imgButton3);
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -30,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        ImageButton button4 = (ImageButton)findViewById(R.id.imgButton4);
+        ImageView button4 = (ImageView)findViewById(R.id.imgButton4);
         button4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
