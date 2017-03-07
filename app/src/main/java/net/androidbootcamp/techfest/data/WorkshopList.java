@@ -9,7 +9,7 @@ import java.util.List;
  * @created 3/6/17.
  */
 
-public class Workshops {
+public class WorkshopList {
 
     @SerializedName("sessions")
     public List<String> sessions;
