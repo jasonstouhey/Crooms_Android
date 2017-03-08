@@ -19,7 +19,7 @@ import android.view.ViewGroup;
 
 import android.widget.TextView;
 
-public class MainWorkshop9 extends AppCompatActivity {
+public class Workshops9 extends AppCompatActivity {
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
@@ -39,7 +39,7 @@ public class MainWorkshop9 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_workshop9);
+        setContentView(R.layout.activity_workshops9);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -69,7 +69,7 @@ public class MainWorkshop9 extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main_workshop9, menu);
+        getMenuInflater().inflate(R.menu.menu_workshops9, menu);
         return true;
     }
 
@@ -88,44 +88,9 @@ public class MainWorkshop9 extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    /**
-     * A placeholder fragment containing a simple view.
-     */
-    public static class PlaceholderFragment extends Fragment {
-        /**
-         * The fragment argument representing the section number for this
-         * fragment.
-         */
-        private static final String ARG_SECTION_NUMBER = "section_number";
-
-        public PlaceholderFragment() {
-        }
-
-        /**
-         * Returns a new instance of this fragment for the given section
-         * number.
-         */
-        public static PlaceholderFragment newInstance(int sectionNumber) {
-            PlaceholderFragment fragment = new PlaceholderFragment();
-            Bundle args = new Bundle();
-            args.putInt(ARG_SECTION_NUMBER, sectionNumber);
-            fragment.setArguments(args);
-            return fragment;
-        }
-
-        @Override
-        public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                                 Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_main_workshop9, container, false);
-            TextView textView = (TextView) rootView.findViewById(R.id.section_label);
-            textView.setText(getString(R.string.section_format, getArguments().getInt(ARG_SECTION_NUMBER)));
-            return rootView;
-        }
-    }
-
-    /**
-     * A {@link FragmentPagerAdapter} that returns a fragment corresponding to
-     * one of the sections/tabs/pages.
+     /*
+      A {@link FragmentPagerAdapter} that returns a fragment corresponding to
+      one of the sections/tabs/pages.
      */
     public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
@@ -135,9 +100,23 @@ public class MainWorkshop9 extends AppCompatActivity {
 
         @Override
         public Fragment getItem(int position) {
-            // getItem is called to instantiate the fragment for the given page.
-            // Return a PlaceholderFragment (defined as a static inner class below).
-            return PlaceholderFragment.newInstance(position + 1);
+            switch (position) {
+                case 0:
+                    tab1 tab1 = new tab1();
+                    return tab1;
+                case 1:
+                    tab2 tab2 = new tab2();
+                    return tab2;
+                case 2:
+                    tab3 tab3 = new tab3();
+                    return tab3;
+                case 3:
+                    tab4 tab4 = new tab4();
+                    return tab4;
+                default:
+                    return null;
+
+            }
         }
 
         @Override
@@ -150,11 +129,13 @@ public class MainWorkshop9 extends AppCompatActivity {
         public CharSequence getPageTitle(int position) {
             switch (position) {
                 case 0:
-                    return "SECTION 1";
+                    return "Tab 1";
                 case 1:
-                    return "SECTION 2";
+                    return "Tab 2";
                 case 2:
-                    return "SECTION 3";
+                    return "Tab 3";
+                case 3:
+                    return "Tab 4";
             }
             return null;
         }

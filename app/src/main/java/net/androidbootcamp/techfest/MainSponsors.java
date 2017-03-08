@@ -1,9 +1,10 @@
 package net.androidbootcamp.techfest;
 
+import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class MainSponsors extends AppCompatActivity {
+public class MainSponsors extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

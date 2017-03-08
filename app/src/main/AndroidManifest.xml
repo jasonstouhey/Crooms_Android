@@ -8,7 +8,10 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".splashscreen"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -16,12 +19,17 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainWorkshop" />
-        <activity android:name=".MainWorkshops10" />
-        <activity android:name=".MainWorkshops11" />
-        <activity android:name=".MainWorkshops12" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Maps" />
+        <activity android:name=".About" />
+        />
         <activity
-            android:name=".MainWorkshop9"
-            android:label="@string/title_activity_main_workshop9"
+            android:name=".Workshops9"
+            android:label="@string/title_activity_workshops9"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

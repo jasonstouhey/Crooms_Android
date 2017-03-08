@@ -1,14 +1,13 @@
 package net.androidbootcamp.techfest;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,5 +30,26 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, MainWorkshop.class));
             }
         });
+
+
+/*
+        ImageView button3 = (ImageView)findViewById(R.id.imgButton3);
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, Maps.class));
+            }
+        });
+
+        ImageView button4 = (ImageView)findViewById(R.id.imgButton4);
+        button4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, About.class));
+            }
+        });
+*/
     }
+
+
 }
