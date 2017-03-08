@@ -6,16 +6,15 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class Maps extends Activity {
+public class MainMaps extends Activity {
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.maps);
+        setContentView(R.layout.activity_maps);
         ViewPager pager = (ViewPager) findViewById(R.id.pager);
 
         //pager.setAdapter(new CustomPagerAdapter(getSupportFragmentManager(), this));

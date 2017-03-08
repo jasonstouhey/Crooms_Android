@@ -41,7 +41,7 @@
                 android:id="@+id/imgSponsor2"
                 android:layout_height="150dp"
                 android:scaleType="fitCenter"
-                android:background="@android:color/transparent"
+                android:background="?android:attr/colorEdgeEffect"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="10dp" />
 

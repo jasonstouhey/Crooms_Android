@@ -24,8 +24,9 @@
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
-        <activity android:name=".Maps" />
-        <activity android:name=".About" />
+        <activity android:name=".MainMaps" />
+        <activity android:name=".MainAbout" />
+        <activity android:name=".MainSponsors"
         />
         <activity
             android:name=".Workshops9"
