@@ -24,5 +24,5 @@ public class Session {
     public Workshop keynote;
 
     @SerializedName("presentations")
-    public List<Object> presentations;
+    public List<Presentation> presentations;
 }

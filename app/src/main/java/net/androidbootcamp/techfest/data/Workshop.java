@@ -21,12 +21,12 @@ public class Workshop {
     public List<String> presenter;
 
     @SerializedName("business")
-    public List<String> business;
+    public String business;
 
     @SerializedName("presenterPhoto")
-    public List<String> presenterPhoto;
+    public String presenterPhoto;
 
     @SerializedName("title")
-    public List<String> title;
+    public String title;
 
 }

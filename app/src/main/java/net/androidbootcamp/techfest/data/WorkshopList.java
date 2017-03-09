@@ -12,6 +12,6 @@ import java.util.List;
 public class WorkshopList {
 
     @SerializedName("sessions")
-    public List<String> sessions;
+    public List<Session> sessions;
 
 }
