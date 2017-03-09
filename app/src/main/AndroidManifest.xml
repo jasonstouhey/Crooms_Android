@@ -26,6 +26,7 @@
         <activity android:name=".Main2Activity" />
         <activity android:name=".MainWorkshop" />
         <activity android:name=".MainWorkshops"></activity>
+        <activity android:name=".MainSponsors"/>
         <activity android:name=".Maps" />
         <activity android:name=".About"/>
         <activity android:name=".SponsorMain" />

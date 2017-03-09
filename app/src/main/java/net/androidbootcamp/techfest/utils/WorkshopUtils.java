@@ -7,12 +7,17 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
 import net.androidbootcamp.techfest.R;
+import net.androidbootcamp.techfest.data.Presentation;
+import net.androidbootcamp.techfest.data.Session;
+import net.androidbootcamp.techfest.data.Workshop;
 import net.androidbootcamp.techfest.data.WorkshopList;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author jamestimberlake
@@ -22,24 +27,75 @@ import java.util.List;
 public class WorkshopUtils {
 
     private static WorkshopList workshopList;
+    private static Map<Integer, Integer> grades = new HashMap<>();
 
     public static void Initialize(Context context) {
         workshopList = getWorkshopListFromSource(context);
     }
 
     @NonNull
-    public static List<String> getAllGrades() {
-        return new ArrayList<>();
+    public static List<Integer> getAllGrades() {
+
+        List<Integer> gradeLevels = new ArrayList<>();
+
+        if(workshopList != null) {
+            for(Session session : workshopList.sessions) {
+                if(session.keynote != null){
+                    for(Integer grade : session.keynote.gradeLevels) {
+                        if (grades.get(grade) == null) {
+                            grades.put(grade, grade);
+                        }
+                    }
+                }
+
+                if(session.presentations != null && !session.presentations.isEmpty()){
+                    for(Presentation presentation : session.presentations) {
+                        for(Integer grade : presentation.gradeLevels) {
+                            if (grades.get(grade) == null) {
+                                grades.put(grade, grade);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        for(Integer grade : grades.values()) {
+            gradeLevels.add(grade);
+        }
+
+        return gradeLevels;
     }
 
-    @NonNull
-    public static List<String> getAllRoomsForGrade(String grade) {
-        return new ArrayList<>();
-    }
 
     @NonNull
-    public static List<Object> getAllWorkshopsForRoom(String grade, String room) {
-        return new ArrayList<>();
+    public static List<Workshop> getAllWorkshopsForRoom(Integer selectedGrade) {
+        List<Workshop> workshops = new ArrayList<>();
+        if(workshopList != null) {
+            for(Session session : workshopList.sessions) {
+                if (session.keynote != null) {
+                    for (Integer grade : session.keynote.gradeLevels) {
+                        if ( selectedGrade.equals(grade)) {
+                            workshops.add(session.keynote);
+                            break;
+                        }
+                    }
+                }
+
+                if (session.presentations != null && !session.presentations.isEmpty()) {
+                    for (Presentation presentation : session.presentations) {
+                        for (Integer grade : presentation.gradeLevels) {
+                            if ( selectedGrade.equals(grade)) {
+                                workshops.addAll(presentation.workshops);
+                                continue;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        return workshops;
     }
 
     private static WorkshopList getWorkshopListFromSource(Context context) {
