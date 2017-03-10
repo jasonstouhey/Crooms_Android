@@ -8,6 +8,15 @@
     android:background="@color/colorPrimary">
 
     <TextView
+        android:id="@+id/workshop_time_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textcColorOffsetPrimary"
+        tools:text="8:00am - 9:00am"
+        android:textStyle="normal|bold"
+        android:textSize="22sp" />
+
+    <TextView
         android:id="@+id/workshop_title_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -15,6 +15,8 @@ import net.androidbootcamp.techfest.data.WorkshopList;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -72,10 +74,15 @@ public class WorkshopUtils {
     public static List<Workshop> getAllWorkshopsForGrade(Integer selectedGrade) {
         List<Workshop> workshops = new ArrayList<>();
         if(workshopList != null) {
+
+            Collections.sort(workshopList.sessions);
+
             for(Session session : workshopList.sessions) {
                 if (session.keynote != null) {
                     for (Integer grade : session.keynote.gradeLevels) {
                         if ( selectedGrade.equals(grade)) {
+                            session.keynote.isKeynote = true;
+                            session.keynote.time = getSessionTimeString(session);
                             workshops.add(session.keynote);
                             break;
                         }
@@ -86,6 +93,9 @@ public class WorkshopUtils {
                     for (Presentation presentation : session.presentations) {
                         for (Integer grade : presentation.gradeLevels) {
                             if ( selectedGrade.equals(grade)) {
+                                for(Workshop workshop : presentation.workshops) {
+                                    workshop.time = getSessionTimeString(session);
+                                }
                                 workshops.addAll(presentation.workshops);
                                 continue;
                             }
@@ -97,6 +107,11 @@ public class WorkshopUtils {
 
         return workshops;
     }
+
+    private static String getSessionTimeString(Session session) {
+        return session.getReadableSessionStartTime() + " - " + session.getReadableSessionEndTime();
+    }
+
 
     private static WorkshopList getWorkshopListFromSource(Context context) {
         InputStream inputStream = context.getResources().openRawResource(R.raw.workshops);

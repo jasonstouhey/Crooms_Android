@@ -29,4 +29,8 @@ public class Workshop {
     @SerializedName("title")
     public String title;
 
+    public String time;
+
+    public boolean isKeynote = false;
+
 }

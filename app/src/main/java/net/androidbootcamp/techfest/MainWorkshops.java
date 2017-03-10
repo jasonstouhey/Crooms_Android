@@ -73,12 +73,21 @@ public class MainWorkshops extends AppCompatActivity {
                 convertView = inflater.inflate(R.layout.view_workshop_item, parent, false);
             }
 
+            TextView time = (TextView) convertView.findViewById(R.id.workshop_time_text);
             TextView title = (TextView) convertView.findViewById(R.id.workshop_title_text);
             TextView presentedBy = (TextView) convertView.findViewById(R.id.workshop_presented_by_text);
             TextView roomNumber = (TextView) convertView.findViewById(R.id.workshop_room_text);
             TextView gradeLevel = (TextView) convertView.findViewById(R.id.workshop_grades_text);
 
             Workshop workshopItem = workshopItems.get(position);
+
+            String timeText = workshopItem.time;
+
+            if(workshopItem.isKeynote) {
+                timeText += " (KEYNOTE)";
+            }
+
+            time.setText(timeText);
 
             title.setText(workshopItem.title);
             if(workshopItem.presenter != null && !workshopItem.presenter.isEmpty()) {
