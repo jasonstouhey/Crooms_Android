@@ -5,10 +5,6 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="net.androidbootcamp.techfest.MainActivity">
 
     <ScrollView
@@ -20,72 +16,151 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true">
+            android:layout_alignParentStart="true"
+            android:gravity="center_horizontal">
 
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/shape_linear_layout_border"
+                android:orientation="vertical">
             <ImageView
-                android:layout_width="300dp"
-                app:srcCompat="@drawable/sample"
+                android:layout_width="wrap_content"
+                app:srcCompat="@drawable/sponsors"
                 android:id="@+id/imgButton1"
                 android:background="@android:color/transparent"
-                android:scaleType="fitXY"
+                android:scaleType="centerCrop"
                 android:layout_height="150dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
-                android:layout_marginBottom="15dp"
-                android:layout_marginTop="15dp"
                 android:layout_gravity="center_horizontal"/>
 
-            <ImageView
-                android:layout_width="300dp"
-                app:srcCompat="@drawable/sample"
-                android:id="@+id/imgButton2"
-                android:scaleType="fitXY"
-                android:background="@android:color/transparent"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
-                android:layout_marginTop="15dp"
-                android:layout_height="150dp"
-                android:layout_marginBottom="15dp"
-                android:layout_gravity="center_horizontal"/>
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/textcColorOffsetPrimary"
+                    android:padding="10dp"
+                    android:text="@string/main_sponspors"
+                    tools:text="Sponsors"
+                    />
+            </LinearLayout>
 
-            <ImageView
-                android:layout_width="300dp"
-                app:srcCompat="@drawable/sample"
-                android:id="@+id/imgButton3"
-                android:scaleType="fitXY"
-                android:background="@android:color/transparent"
-                android:layout_height="150dp"
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
-                android:layout_marginTop="15dp"
                 android:layout_marginBottom="15dp"
-                android:layout_gravity="center_horizontal"/>
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
 
-            <ImageView
-                android:layout_width="300dp"
-                app:srcCompat="@drawable/sample"
-                android:id="@+id/imgButton4"
-                android:background="@android:color/transparent"
-                android:scaleType="fitXY"
-                android:layout_height="150dp"
-                android:layout_marginBottom="15dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
-                android:layout_marginTop="15dp"
-                android:layout_gravity="center_horizontal"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        app:srcCompat="@drawable/workshops"
+                        android:id="@+id/imgButton2"
+                        android:scaleType="centerCrop"
+                        android:background="@android:color/transparent"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center_horizontal"/>
 
-            <ImageView
-                android:layout_width="300dp"
-                app:srcCompat="@drawable/sample"
-                android:id="@+id/imgButton5"
-                android:background="@android:color/transparent"
-                android:scaleType="fitXY"
-                android:layout_height="150dp"
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary"
+                        android:textColor="@color/textcColorOffsetPrimary"
+                        android:padding="10dp"
+                        android:text="@string/main_workshops"
+                        tools:text="Sponsors"
+                        />
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
-                android:layout_marginTop="15dp"
                 android:layout_marginBottom="15dp"
-                android:layout_gravity="center_horizontal"/>
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        app:srcCompat="@drawable/map"
+                        android:id="@+id/imgButton3"
+                        android:scaleType="centerCrop"
+                        android:background="@android:color/transparent"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center_horizontal"/>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary"
+                        android:textColor="@color/textcColorOffsetPrimary"
+                        android:padding="10dp"
+                        android:text="@string/main_maps"
+                        tools:text="Sponsors"
+                        />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        app:srcCompat="@drawable/about"
+                        android:id="@+id/imgButton4"
+                        android:background="@android:color/transparent"
+                        android:scaleType="centerCrop"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center_horizontal"/>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary"
+                        android:textColor="@color/textcColorOffsetPrimary"
+                        android:padding="10dp"
+                        android:text="@string/main_about"
+                        tools:text="Sponsors"
+                        />
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    app:srcCompat="@drawable/img_profile_1791073_1"
+                    android:id="@+id/imgButton5"
+                    android:background="@android:color/transparent"
+                    android:scaleType="centerCrop"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center_horizontal"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/textcColorOffsetPrimary"
+                    android:padding="10dp"
+                    android:text="@string/main_privacy"
+                    tools:text="Sponsors" />
+        </LinearLayout>
         </LinearLayout>
     </ScrollView>
 

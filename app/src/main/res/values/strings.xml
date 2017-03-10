@@ -3,4 +3,10 @@
     <string name="txtSponsor">Sponsor Name</string>
     <string name="txtSponsorDescription">Description about sponsor?</string>
     <string name="txtGradeLevel">Pick your grade level.</string>
+
+    <string name="main_sponspors">Sponsors</string>
+    <string name="main_workshops">Workshops</string>
+    <string name="main_maps">Maps</string>
+    <string name="main_about">About</string>
+    <string name="main_privacy">Terms/Privacy Policy</string>
 </resources>

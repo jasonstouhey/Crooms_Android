@@ -25,17 +25,22 @@
         </activity>
         <activity android:name=".Main2Activity" />
         <activity android:name=".MainWorkshop" />
-        <activity android:name=".MainWorkshops"></activity>
-        <activity android:name=".MainSponsors"/>
+        <activity android:name=".MainWorkshops" />
+        <activity android:name=".MainSponsors" />
         <activity android:name=".Maps" />
-        <activity android:name=".About"/>
+        <activity android:name=".About" />
         <activity android:name=".SponsorMain" />
         <activity android:name=".Sponsor1" />
         <activity android:name=".Sponsor2" />
         <activity android:name=".Sponsor3" />
         <activity android:name=".Sponsor4" />
         <activity android:name=".Sponsor5" />
-        <activity android:name=".Sponsor6"></activity>
+        <activity android:name=".Sponsor6" />
+        <activity android:name=".PrivacyActivity"></activity>
+        
+        
     </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
 </manifest>

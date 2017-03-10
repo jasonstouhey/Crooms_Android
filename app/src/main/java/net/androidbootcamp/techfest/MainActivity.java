@@ -50,6 +50,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        ImageView button5 = (ImageView)findViewById(R.id.imgButton5);
+        button5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, PrivacyActivity.class));
+            }
+        });
+
     }
 
 
