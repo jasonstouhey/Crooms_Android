@@ -9,4 +9,9 @@
     <string name="main_maps">Maps</string>
     <string name="main_about">About</string>
     <string name="main_privacy">Terms/Privacy Policy</string>
+
+    <string name="workshop_grade_9">Grade 9</string>
+    <string name="workshop_grade_10">Grade 10</string>
+    <string name="workshop_grade_11">Grade 11</string>
+    <string name="workshop_grade_12">Grade 12</string>
 </resources>

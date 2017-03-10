@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:id="@+id/workshop_title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textcColorOffsetPrimary"
+        tools:text="How to have healthy relationships"
+        android:textStyle="normal|bold"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/workshop_presented_by_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textcColorOffsetPrimary"
+        tools:text="By Tim Parsons"
+        android:textSize="16sp"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:id="@+id/workshop_room_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textcColorOffsetPrimary"
+        tools:text="Room - 213"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/workshop_grades_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textcColorOffsetPrimary"
+        tools:text="Grades: 10"
+        android:textSize="16sp" />
+
+</LinearLayout>

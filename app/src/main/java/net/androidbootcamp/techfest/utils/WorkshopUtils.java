@@ -69,7 +69,7 @@ public class WorkshopUtils {
 
 
     @NonNull
-    public static List<Workshop> getAllWorkshopsForRoom(Integer selectedGrade) {
+    public static List<Workshop> getAllWorkshopsForGrade(Integer selectedGrade) {
         List<Workshop> workshops = new ArrayList<>();
         if(workshopList != null) {
             for(Session session : workshopList.sessions) {
