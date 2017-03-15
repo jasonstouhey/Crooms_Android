@@ -14,4 +14,41 @@
     <string name="workshop_grade_10">Grade 10</string>
     <string name="workshop_grade_11">Grade 11</string>
     <string name="workshop_grade_12">Grade 12</string>
+
+    <string name="soph_sponsor_title">Sophmore Sponsor</string>
+
+    <string name="junior_sponsor_title">Junior Sponsor</string>
+
+    <string name="freshman_sponsor_title">Freshman Sponsor</string>
+
+    <string name="freshman_sponsor_1">Astronics Test Systems</string>
+    <string name="freshman_sponsor_2">Certiport, a Pearson VUE Business</string>
+    <string name="freshman_sponsor_3">Convergys Corporation</string>
+    <string name="freshman_sponsor_4">Devry University</string>
+    <string name="freshman_sponsor_5">Electronic Arts</string>
+    <string name="freshman_sponsor_6">Emmy-Riddle Aeronautical University</string>
+    <string name="freshman_sponsor_7">Full Sail University</string>
+    <string name="freshman_sponsor_8">Florida S.P.E.C.S. Inc</string>
+    <string name="freshman_sponsor_9">Greyson Technologies</string>
+    <string name="freshman_sponsor_10">Microsoft</string>
+    <string name="freshman_sponsor_11">RLH Consulting &amp; Management Inc</string>
+    <string name="freshman_sponsor_12">Seminole State College</string>
+    <string name="freshman_sponsor_13">Siemens Energy, Inc</string>
+    <string name="freshman_sponsor_14">The DAVE School</string>
+    <string name="freshman_sponsor_15">Troy University</string>
+
+    <string name="community_sponsor_title">Community Sponsor</string>
+
+    <string name="community_sponsor_1">The Almond Family</string>
+    <string name="community_sponsor_2">The Alper Family</string>
+    <string name="community_sponsor_3">The Atkins Family</string>
+    <string name="community_sponsor_4">DiSTI Corporation</string>
+    <string name="community_sponsor_5">The Faison Family</string>
+    <string name="community_sponsor_6">Kavaliro</string>
+    <string name="community_sponsor_7">Maxine&#8217;s on Shine</string>
+    <string name="community_sponsor_8">The Merilll-Cain Family</string>
+    <string name="community_sponsor_9">The Schoneck Family</string>
+    <string name="community_sponsor_10">The Sign Man</string>
+    <string name="community_sponsor_11">United States Navy</string>
+    <string name="community_sponsor_12">Universal Orlando Resort</string>
 </resources>

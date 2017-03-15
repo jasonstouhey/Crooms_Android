@@ -22,6 +22,7 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:id="@+id/imgButton1"
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
                 android:layout_marginBottom="15dp"
@@ -31,7 +32,6 @@
             <ImageView
                 android:layout_width="wrap_content"
                 app:srcCompat="@drawable/sponsors"
-                android:id="@+id/imgButton1"
                 android:background="@android:color/transparent"
                 android:scaleType="centerCrop"
                 android:layout_height="150dp"
@@ -55,12 +55,12 @@
                 android:layout_marginRight="15dp"
                 android:layout_marginBottom="15dp"
                 android:layout_marginTop="15dp"
+                android:id="@+id/imgButton2"
                 android:orientation="vertical">
 
                     <ImageView
                         android:layout_width="wrap_content"
                         app:srcCompat="@drawable/workshops"
-                        android:id="@+id/imgButton2"
                         android:scaleType="centerCrop"
                         android:background="@android:color/transparent"
                         android:layout_height="150dp"
@@ -84,12 +84,12 @@
                 android:layout_marginRight="15dp"
                 android:layout_marginBottom="15dp"
                 android:layout_marginTop="15dp"
+                android:id="@+id/imgButton3"
                 android:orientation="vertical">
 
                     <ImageView
                         android:layout_width="wrap_content"
                         app:srcCompat="@drawable/map"
-                        android:id="@+id/imgButton3"
                         android:scaleType="centerCrop"
                         android:background="@android:color/transparent"
                         android:layout_height="150dp"
@@ -113,11 +113,11 @@
                 android:layout_marginRight="15dp"
                 android:layout_marginBottom="15dp"
                 android:layout_marginTop="15dp"
+                android:id="@+id/imgButton4"
                 android:orientation="vertical">
                     <ImageView
                         android:layout_width="wrap_content"
                         app:srcCompat="@drawable/about"
-                        android:id="@+id/imgButton4"
                         android:background="@android:color/transparent"
                         android:scaleType="centerCrop"
                         android:layout_height="150dp"
@@ -141,12 +141,12 @@
                 android:layout_marginRight="15dp"
                 android:layout_marginBottom="15dp"
                 android:layout_marginTop="15dp"
+                android:id="@+id/imgButton5"
                 android:orientation="vertical">
 
                 <ImageView
                     android:layout_width="wrap_content"
                     app:srcCompat="@drawable/img_profile_1791073_1"
-                    android:id="@+id/imgButton5"
                     android:background="@android:color/transparent"
                     android:scaleType="centerCrop"
                     android:layout_height="150dp"

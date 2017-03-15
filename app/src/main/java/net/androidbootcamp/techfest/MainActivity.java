@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 import net.androidbootcamp.techfest.data.WorkshopList;
 import net.androidbootcamp.techfest.utils.WorkshopUtils;
@@ -17,8 +18,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         WorkshopUtils.Initialize(this);
-        ImageView button1 = (ImageView)findViewById(R.id.imgButton1);
-        ImageView button2 = (ImageView)findViewById(R.id.imgButton2);
+        LinearLayout button1 = (LinearLayout)findViewById(R.id.imgButton1);
+        LinearLayout button2 = (LinearLayout)findViewById(R.id.imgButton2);
 
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        ImageView button3 = (ImageView)findViewById(R.id.imgButton3);
+        LinearLayout button3 = (LinearLayout)findViewById(R.id.imgButton3);
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -42,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        ImageView button4 = (ImageView)findViewById(R.id.imgButton4);
+        LinearLayout button4 = (LinearLayout)findViewById(R.id.imgButton4);
         button4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -50,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        ImageView button5 = (ImageView)findViewById(R.id.imgButton5);
+        LinearLayout button5 = (LinearLayout)findViewById(R.id.imgButton5);
         button5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
