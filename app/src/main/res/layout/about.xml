@@ -10,12 +10,23 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="net.androidbootcamp.techfest.About">
 
+    <fragment
+        android:id="@+id/youtube_player_fragment"
+        android:name="com.google.android.youtube.player.YouTubePlayerFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true">
+        android:layout_below="@+id/youtube_player_fragment"
+        android:layout_alignParentStart="true"
+        android:layout_toEndOf="@+id/youtube_player_fragment">
+
+        <!--<com.google.android.youtube.player.YouTubePlayerView-->
+            <!--android:id="@+id/youtube_view"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"/>-->
 
             <TextView
                 android:text="TextView"

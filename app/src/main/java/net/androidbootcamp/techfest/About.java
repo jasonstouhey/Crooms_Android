@@ -1,19 +1,38 @@
 package net.androidbootcamp.techfest;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.android.youtube.player.YouTubeInitializationResult;
+import com.google.android.youtube.player.YouTubePlayer;
+import com.google.android.youtube.player.YouTubePlayerFragment;
 
 /**
  * Created by Alex Quach on 3/1/2017.
  */
 
-public class About extends AppCompatActivity {
+public class About extends AppCompatActivity implements YouTubePlayer.OnInitializedListener{
+
+    private YouTubePlayerFragment playerFragment;
+    private YouTubePlayer mPlayer;
+    private String YouTubeKey = "AIzaSyAnCCcAgf8mHXLS5gXdC-2kC2yV41KWAlo"; //
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.about);
+
+        playerFragment =
+                (YouTubePlayerFragment) getFragmentManager().findFragmentById(R.id.youtube_player_fragment);
+
+        playerFragment.initialize(YouTubeKey, this);
+
+
+        //mPlayer.cueVideo("https://youtu.be/hIc7aDJbsVw");
+
         final TextView Change = ((TextView)findViewById(R.id.txtView));
         Change.setText("ABOUT CROOMS ACADEMY \n\n" +
                 "\tCrooms Academy of Information Technology began as Crooms High School. It was founded by one of the nation's outstanding pioneers of education for black students, Professor Joseph Nathaniel Crooms. A graduate of Hampton University and Florida A & M University, Crooms was known for his untiring efforts and energies in the promotion of education for black youth in Florida, as well as the development of schools in Sanford, Florida. In 1910, Crooms obtained approval for a new school building. He developed the plans and selected the school site. In 1926, Crooms Academy was constructed as a high school for black students. It was named after Professor Crooms by a community grateful for his dedication and energy in pursuit of educational opportunity for its students. \n\n" +
@@ -30,4 +49,51 @@ public class About extends AppCompatActivity {
                 "\tTechFest, it’s your Hi-Tech Community, Get into IT! For more information visit Techfest.croomsweb.org");
 
     }
+
+    @Override
+    public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer player,
+                                        boolean wasRestored) {
+        if (!wasRestored) {
+            player.cueVideo("hIc7aDJbsVw");
+        }
+    }
+    /*
+    @Override
+    public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer player,
+                                        boolean wasRestored) {
+        mPlayer = player;
+
+        //Enables automatic control of orientation
+        mPlayer.setFullscreenControlFlags(YouTubePlayer.FULLSCREEN_FLAG_CONTROL_ORIENTATION);
+
+        //Show full screen in landscape mode always
+        mPlayer.addFullscreenControlFlag(YouTubePlayer.FULLSCREEN_FLAG_ALWAYS_FULLSCREEN_IN_LANDSCAPE);
+
+        //System controls will appear automatically
+        mPlayer.addFullscreenControlFlag(YouTubePlayer.FULLSCREEN_FLAG_CONTROL_SYSTEM_UI);
+
+        if (!wasRestored) {
+            //player.cueVideo("9rLZYyMbJic");
+            mPlayer.cueVideo("9rLZYyMbJic");
+        }
+        else
+        {
+            mPlayer.play();
+        }
+    }*/
+
+    @Override
+    public void onInitializationFailure(YouTubePlayer.Provider provider,
+                                        YouTubeInitializationResult errorReason) {
+        mPlayer = null;
+        String errorMessage = String.format(
+            "There was an error initializing the YouTubePlayer",
+            errorReason.toString());
+        Toast.makeText(this, errorMessage, Toast.LENGTH_LONG).show();
+    }
+
+    protected YouTubePlayer.Provider getYouTubePlayerProvider() {
+        return (YouTubePlayerFragment) getFragmentManager().findFragmentById(R.id.youtube_player_fragment);
+    }
+
 }
